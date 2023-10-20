@@ -1,0 +1,19 @@
+$color-fondo: #ffffff;
+$fuente-tipica:'Montserrat', sans-serif;
+$color-letra: #9331be;
+*{
+    text-align: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: $fuente-tipica;
+}
+body {
+  font-family: $fuente-tipica;
+  color: $color-letra;
+    margin: 0%;
+    padding: 0%;
+}
+root{
+    margin: 0%;
+    padding: 0%;
+}

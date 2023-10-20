@@ -1,0 +1,36 @@
+/* Colores de texto */
+/* Colores de fondo */
+.home-container {
+  padding: 3%;
+  background-color: rgb(54, 55, 85);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header__logo {
+  margin: 1%;
+  width: 5%;
+}
+.header__marca {
+  margin: 1%;
+}
+.home {
+  padding: 10%;
+}
+.home__marca {
+  color: white;
+}
+.home__slogan {
+  color: rgb(93, 211, 199);
+}
+
+.container-circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+$color-texto-blue: rgba(54, 55, 85, 1);
+$color-texto-green: rgba(93, 211, 199, 1);
+$font-poppins: 'Poppins', sans-serif;
+
+@mixin texto($color, $size, $weight) {
+    color: $color;
+    font-weight:$weight;
+    font-size: $size;
+margin: 2%;
+}
+
+.brand-info {
+    background-color: white;
+    margin: 12%;
+    margin-right: 19%;
+    margin-left: 19%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+      text-align: center;
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+
+ @include texto($color-texto-blue, 420%, 1500)
+  }
+
+  &__paragraph {
+@include texto($color-texto-blue, 110%, 899)
+  }
+}
+strong{
+  font-family: 'Poppins', sans-serif;
+    color: $color-texto-green;
+}

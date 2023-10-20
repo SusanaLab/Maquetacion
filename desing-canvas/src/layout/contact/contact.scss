@@ -1,0 +1,132 @@
+$color-texto-white: white;
+$color-texto-green: rgba(93, 211, 199, 1);
+$color-texto-gray: rgba(224, 228, 239, 1);
+$color-texto-blue: rgba(54, 55, 85, 1);
+
+
+/* Sass */
+.contact {
+ display: flex;
+ background-color: $color-texto-blue;
+ padding: 4%;
+ flex-direction: row;
+ margin: 2%;
+ border-radius: 10px;
+ &__logo{
+    width: 100px;
+    height: auto;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    margin-right: 30%;
+    justify-content: space-between;
+    .social {
+      display: flex;
+    }
+
+  .social__icon {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50%; 
+}
+
+  }
+
+  &__links {
+      padding-left: 3%;
+    .contact__link {
+        font-size: 27px;
+      display: block;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+  
+      &:hover {
+        color:$color-texto-green;
+      }
+    }
+  }
+
+.contact__form {
+      margin: 4%;
+  label {
+    display: block;
+    color: $color-texto-white;
+  }
+
+  .input-container {
+    display: flex;
+
+    input {
+      flex: 1;
+      padding: 20px;
+       border-radius: 10px;
+    }
+
+   button {
+      cursor: pointer;
+    }
+  }
+}
+#contact__input{
+   border-radius: 10px;
+   padding: 3% 8%;
+   margin: 1%;
+   border: none;
+   color: $color-texto-blue;
+   
+}
+
+.contact__button{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      background-color:$color-texto-white;
+      border: none;
+      color:$color-texto-blue;
+      border-radius: 3px;
+       padding: 5.2px 6px;
+       
+}
+.contact__button:hover{
+    background-color: $color-texto-green;
+    color: $color-texto-blue;
+}
+
+  &__legal {
+      padding: 3%;
+    h5 {
+      font-size: 10px;
+      color: #ffffff;
+      margin-top: 10px;
+      font-weight: 200;
+    }
+  }
+}
+
+
+.ContactInfo{
+  display: flex;
+    flex-direction: column;
+    margin: 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0%;
+    padding-right: 8%;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+.contact {
+ display: flex;
+ flex-direction: column;
+ }
+}
+

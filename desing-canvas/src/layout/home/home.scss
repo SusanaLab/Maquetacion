@@ -1,0 +1,108 @@
+/* Colores de texto */
+$color-texto-white: white;
+$color-texto-green: rgba(93, 211, 199, 1);
+$color-texto-gray: rgba(224, 228, 239, 1);
+$color-texto-blue: rgba(54, 55, 85, 1);
+
+/* Colores de fondo */
+$color-fondo-white: white;
+$color-fondo-green: rgba(93, 211, 199, 1);
+$color-fondo-gray: rgba(224, 228, 239, 1);
+$color-fondo-blue: rgba(54, 55, 85, 1);
+
+
+@mixin textoTitulo() {
+  color: $color-texto-green;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+
+.home-container {
+
+    padding: 2%;
+    background-color: $color-fondo-blue;
+
+}
+
+.home{
+  font-size: 370%;
+  display: flex;
+  margin: 2%;
+  margin-top: 6%;
+  margin-bottom: 7%;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+ 
+
+  &__logos {
+   padding-top: 0%;
+    width: 5%;
+  }
+
+  &__marca {
+    color: $color-fondo-white;
+    margin: 1%; 
+    margin-top: 1%;
+  }
+
+  &__slogan {
+   
+  }
+}
+ 
+
+.home {
+    padding: 0%;
+  &__marca {
+ color: $color-texto-white;
+  }
+
+  &__slogan {
+     color: $color-texto-green;
+  }
+}
+
+.container-circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+
+  .header__marca {
+    animation: cambio-de-texto 5s infinite alternate; // La animación se repite infinitamente y alterna entre los estados
+  }
+
+  @keyframes cambio-de-texto {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    50% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+.home {
+display: flex;
+flex-direction: column;
+    padding: 4%;
+    background-color: $color-fondo-blue;
+ font-size: 250%;
+}
+}
