@@ -8,77 +8,185 @@ $color-fondo-green: rgba(93, 211, 199, 1);
 $color-fondo-gray: rgba(224, 228, 239, 1);
 $color-fondo-blue: rgba(54, 55, 85, 1);
 
-.companies-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0%;
+.brands-container {
+  max-width:80%;
+    margin: 0%;
+    padding: 2%; 
+  overflow: hidden;
+ 
 }
-.companies-container__title{
-    margin-bottom: -4%;
-    margin-top: 2%;
-margin-left: 6%;
-font-size: 50px;
-    color: $color-texto-blue;
-    font-family: 'Poppins', sans-serif;
+
+.brands-carousel {
+  position: relative;
+  padding-left: 0;
+  height: 500px;
+  overflow: hidden;
 }
-.companies-container__section {
+
+.brands-carousel > div {
+  width: 100%;
+}
+
+ .brands-carousel > picture {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  animation: carousel 15s linear infinite;
+  transform: translateX(100%);
+  -webkit-animation: carousel 15s linear infinite;
+}
+
+.brands-carousel > picture:nth-child(1) {
+  animation-name: first-picture, carousel;
+  animation-duration: 15s;
+  animation-iteration-count: 1, infinite;
+  animation-delay: 0s, 15s;
+  transform: translateX(0%);
+
+
+}
+
+
+
+.brands-carousel > picture:nth-child(2) {
+  animation-delay: Calc(15s * .33);
+}
+.brands-carousel > picture:nth-child(3) {
+  animation-delay: Calc(15s * .66);
+} 
+
+ @keyframes first-picture {
+  0% { transform: translateX(0%); }
+  7.5%, 33% { transform: translateX(0); }
+  40.5%, 100% { transform: translateX(-100%); }
+
+
+}
+
+@keyframes carousel {
+  0% { transform: translateX(100%); }
+  7.5%, 33% { transform: translateX(0); }
+  40.5%, 100% { transform: translateX(-100%); }
+}
+
+@keyframes first-picture-responsive {
+  0% { transform: translateX(0%); }
+  5.5%, 25% { transform: translateX(0); }
+  30.5%, 100% { transform: translateX(-100%); }
+}
+
+@keyframes carousel-responsive {
+  0% { transform: translateX(100%); }
+  5.5%, 25% { transform: translateX(0); }
+  30.5%, 100% { transform: translateX(-100%); }
+}
+
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+
+.brands-carousel > picture:last-child {
+  display: none;
+}  
+
+
+
+
+ .companies-container__section {
     display: flex;
     flex-direction: row;
-    padding-left: 4%;
-    padding-right: 5%;
-    margin: 0%;
+    color: $color-texto-blue;
+
+}
+
+ .companies-container__content {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+
 }
 
 .companies-container__subtitle {
-    color: $color-texto-blue;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 33px;
+   
+ 
 }
 
 .companies-container__description {
-    margin-top: 5%;
-    color: $color-texto-blue;
-    font-weight: 590;
-     font-size: 17px;
-}
-
-.companies-container__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 4%;
+    margin: 5%;
+    font-size: 18px;
 
 }
 
-.companies-container__images {
- display: flex;
- justify-content: center;
- align-content: center;
- border-radius: 90px;
- align-items: center;
-
-}
-
-.companies-container__image {
-   width: 80%;
-   border-radius: 95px;
-
+ .companies-container__images { 
+ display: flex; flex-direction: row; margin: 0%; padding: 0%; padding-bottom: 4%;
 }
 
 .companies-container__image1 {
-    width: 100px;
-    height: 100px;
-    margin-right: -120px;
-    margin-bottom: -150px;
-    z-index: 100;
-    border-radius: 30px;
- 
+        width: 17%;
+        height: 27%;
+        margin-right: -140px;
+        margin-top: 260px;
+        z-index: 100;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
 }
-@media only screen and (max-width: 600px) {
+
 .companies-container__image {
-    border-radius: 25px;
+    width: 78%;
+    height: 88%;
+        border-radius: 80px;
+}
+
+.comp-title{
+      margin-top: 2%;
+      margin-left: 12%;
+      font-size: 30px;
+      color:$color-texto-blue;
+      animation: slide-in 1000ms;
+      -webkit-animation: slide-in 1000ms;
+}
+.companies-container__title{ 
+     font-family: 'Poppins', sans-serif;
+     font-weight: 700;}
+
+
+@media only screen and (max-width: 760px) {
+ .companies-container__section {
+    display: flex;
+    flex-direction: column;
+
+}
+.brands-carousel {
+  position: relative;
+  padding-left: 0;
+  height: 580px;
+  overflow: hidden;
+}
+.companies-container__image1 {
+        width: 20%;
+        height: 30%;
+        margin-right: -140px;
+        margin-top: 180px;
+        z-index: 100;
+        border-radius: 50px;
+}
+.companies-container__image {
+    width: 80%;
+    height: 90%;
+        border-radius: 80px;
 }
 }

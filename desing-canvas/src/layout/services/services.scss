@@ -16,6 +16,7 @@ $color-fondo-blue: rgba(54, 55, 85, 1);
     margin: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
+       animation: slide-in 1000ms;
   }
 
   &__section {
@@ -44,6 +45,7 @@ $color-fondo-blue: rgba(54, 55, 85, 1);
       color: $color-texto-blue;
       font-family: 'Poppins', sans-serif;
       font-weight: 900;
+
     }
 
     &__description {
@@ -80,15 +82,25 @@ img {
   font-family: 'Poppins', sans-serif;
   font-weight: 4900;
 }
+.services__image{
+      animation: animation1 17s ease 0s infinite alternate-reverse forwards;
+      -webkit-animation: animation1 17s ease 0s infinite alternate-reverse forwards;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
 .services__section{
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+
 
 }
 .services__image{
 display: none;
+     
 }
 .services{
   display: flex;
@@ -99,6 +111,12 @@ display: none;
 .services__description{
   margin-right: 0%;
   margin-bottom: 4%;
-  font-size: 23px;
+  font-size: 21px;
 }
+.services__subtitle{
+  margin-right: 0%;
+  margin-bottom: 4%;
+  font-size: 40px;
+}
+
  }

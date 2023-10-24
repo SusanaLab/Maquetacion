@@ -7,6 +7,7 @@ const QuestionContainer: React.FC = () => {
   return (
         <div className='question-container'>
       <h1 className='titulo'>FAQs</h1>
+      <div className='ball'></div>
       <div className='questionData'>
 
   

@@ -9,14 +9,14 @@ function Home() {
     <section className='home-container'>
       <header className='header'>
         <img src={logo} alt="Logo" className='header__logos' />
-        <h3 className='header__marca'>EnvTech Innovations</h3>
+        <h3 className='header__marca'>Company Innovations</h3>
 
       </header>
      
       <section className='home'> 
        
         <h1 className='home__marca'>
-          EnvTech Innovations - <strong className='home__slogan'>Empowering</strong> Tomorrow, Today
+          Company Innovations - <strong className='home__slogan'>Empowering</strong> Tomorrow, Today
         </h1>
          <Cilindros />
       </section>

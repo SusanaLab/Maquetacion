@@ -27,11 +27,11 @@ const Contact: React.FC<ContactProps> = () => {
             </div>
             <div className='contactInfo'>
             <div className="contact__links">
-                <a href="#" className="contact__link">Inicio</a>
-                <a href="#" className="contact__link">Acerca de Nosotros</a>
-                <a href="#" className="contact__link">Servicios</a>
+                <a href="#" className="contact__link">  Home</a>
+                <a href="#" className="contact__link">About</a>
+                <a href="#" className="contact__link">Services</a>
                 <a href="#" className="contact__link">Blog</a>
-                <a href="#" className="contact__link">Contacto</a>
+                <a href="#" className="contact__link">Contact</a>
             </div>
             <div className="contact__form">
                 <label htmlFor="contact__input">Newsletter</label>
@@ -40,7 +40,7 @@ const Contact: React.FC<ContactProps> = () => {
             </div>
             <div className="contact__legal">
                 <h5>Privacy Policy: For information about our privacy policy, click here.</h5>
-                <h5>Copyright © [Year] EnvTech. All rights reserved.</h5>
+                <h5>Copyright ©company [Year] . All rights reserved.</h5>
             </div>
             </div>
         </div>
