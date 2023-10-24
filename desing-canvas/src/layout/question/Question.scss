@@ -31,16 +31,15 @@ padding-right: 20%;
 
   &__icon {
     margin-left: 20%;
-    font-size: 24px; /* Tamaño del icono */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    /* Puedes agregar más estilos según tus necesidades */
+    font-size: 24px; 
+    cursor: pointer; 
   }
 }
 .question{
   font-size: 10px;
  width: 100%;
   text-align: center;
-    border-top: 1px solid #1c244c; /* Borde arriba de 2 píxeles de grosor y color negro */
+    border-top: 1px solid #1c244c; 
   border-bottom: 1px solid #1c244c; 
   
 }

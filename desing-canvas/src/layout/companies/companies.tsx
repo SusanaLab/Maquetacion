@@ -5,8 +5,8 @@ import image2 from './image2.png';
 import image3 from './image3.png';
 import logo1 from './logo1.jpg';
 import logo2 from './logo2.jpg';
-import logo3 from './logo3.jpeg';
-import { Component, useState } from 'react';
+
+
 
 export interface ICompaniesProps {
 }

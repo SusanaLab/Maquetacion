@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Cilindro from './cilindro';
 import './cilindro.scss';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Question.scss'; // Asegúrate de tener un archivo Question.scss con las clases correspondientes
-import icon from '../companies/icon.jpg';
+
 
 interface QuestionProps {
   data: {

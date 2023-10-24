@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './contact.scss'; // Asegúrate de tener un archivo Question.scss con las clases correspondientes
+
+import './contact.scss'; 
 import facebook from '../contact/fac.png';
 import instagram from '../contact/ins.png';
 import linkdin from '../contact/lin.png';

@@ -1,5 +1,5 @@
 // Cilindro.tsx
-import React, { FunctionComponent } from 'react';
+import  { FunctionComponent } from 'react';
 import './cilindro.scss';
 
 interface CilindroProps {
@@ -7,14 +7,12 @@ interface CilindroProps {
   sizeWidth: number;
 }
 
-const Cilindro: FunctionComponent<CilindroProps> = ({ size, sizeWidth}) => {
+const Cilindro: FunctionComponent<CilindroProps> = ({ size, sizeWidth }) => {
   return (
-    <div className='containerc'>
-      <div className="cilindro" style={{ width: sizeWidth, height: size }}>  
-       <div className="cilindro2" style={{ width: sizeWidth, height: size }}>
+    <div className="containerc">
+      <div className="cilindro" style={{ width: sizeWidth, height: size }}>
+        <div className="cilindro2" style={{ width: sizeWidth, height: size }}></div>
       </div>
-      </div>
-   
     </div>
   );
 };

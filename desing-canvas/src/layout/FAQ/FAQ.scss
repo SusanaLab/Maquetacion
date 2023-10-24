@@ -19,10 +19,10 @@ $color-fondo-blue: rgba(54, 55, 85, 1);
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%); /* Comenzar fuera del contenedor */
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(-100%); /* Terminar fuera del contenedor */
+    transform: translateX(-100%); 
   }
 }
 .container{
@@ -47,10 +47,6 @@ $color-fondo-blue: rgba(54, 55, 85, 1);
     &__description {
         @include generalStyles();
         @include textStyles($color-texto-white, 28, 600);
-
-        &.show {
-
-        }
     }
 }
 @media only screen and (max-width: 600px) {

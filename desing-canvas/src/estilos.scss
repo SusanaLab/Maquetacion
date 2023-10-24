@@ -1,6 +1,17 @@
 $color-fondo: #ffffff;
 $fuente-tipica:'Montserrat', sans-serif;
-$color-letra: #9331be;
+
+$color-texto-white: white;
+$color-texto-green: rgba(93, 211, 199, 1);
+$color-texto-gray: rgba(224, 228, 239, 1);
+$color-texto-blue: rgba(54, 55, 85, 1);
+
+
+$color-fondo-white: white;
+$color-fondo-green: rgba(93, 211, 199, 1);
+$color-fondo-gray: rgba(224, 228, 239, 1);
+$color-fondo-blue: rgba(54, 55, 85, 1);
+
 *{
     text-align: none;
     margin: 0%;
@@ -9,7 +20,7 @@ $color-letra: #9331be;
 }
 body {
   font-family: $fuente-tipica;
-  color: $color-letra;
+  color: $color-texto-blue;
     margin: 0%;
     padding: 0%;
 }
