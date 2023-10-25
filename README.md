@@ -38,7 +38,7 @@ The BEM (Block Element Modifier) methodology will guide the structure of the CSS
 1. **Clone the Repository**: Begin by cloning this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/landing-page-project.git
+git clone https://github.com/SusanaLab/Maquetacion.git
 ```
 
 2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies.
